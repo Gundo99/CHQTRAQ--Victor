@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="lewdevDataSet9" targetNamespace="http://tempuri.org/lewdevDataSet9.xsd" xmlns:mstns="http://tempuri.org/lewdevDataSet9.xsd" xmlns="http://tempuri.org/lewdevDataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="lewdevConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="lewdevConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ChequeTrackerDemo.Properties.Settings.GlobalReference.Default.lewdevConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CHQTRACDEBITSCREDITSTableAdapter" GeneratorDataComponentClassName="CHQTRACDEBITSCREDITSTableAdapter" Name="CHQTRACDEBITSCREDITS" UserDataComponentName="CHQTRACDEBITSCREDITSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="lewdevConnectionString (Settings)" DbObjectName="lewdev.dbo.CHQTRACDEBITSCREDITS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT EffectiveDate, PostingPeriod, Description, Amount FROM dbo.CHQTRACDEBITSCREDITS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="EffectiveDate" DataSetColumn="EffectiveDate" />
+              <Mapping SourceColumn="PostingPeriod" DataSetColumn="PostingPeriod" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="lewdevDataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="lewdevDataSet9" msprop:Generator_UserDSName="lewdevDataSet9">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CHQTRACDEBITSCREDITS" msprop:Generator_TableClassName="CHQTRACDEBITSCREDITSDataTable" msprop:Generator_TableVarName="tableCHQTRACDEBITSCREDITS" msprop:Generator_TablePropName="CHQTRACDEBITSCREDITS" msprop:Generator_RowDeletingName="CHQTRACDEBITSCREDITSRowDeleting" msprop:Generator_RowChangingName="CHQTRACDEBITSCREDITSRowChanging" msprop:Generator_RowEvHandlerName="CHQTRACDEBITSCREDITSRowChangeEventHandler" msprop:Generator_RowDeletedName="CHQTRACDEBITSCREDITSRowDeleted" msprop:Generator_UserTableName="CHQTRACDEBITSCREDITS" msprop:Generator_RowChangedName="CHQTRACDEBITSCREDITSRowChanged" msprop:Generator_RowEvArgName="CHQTRACDEBITSCREDITSRowChangeEvent" msprop:Generator_RowClassName="CHQTRACDEBITSCREDITSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EffectiveDate" msprop:Generator_ColumnVarNameInTable="columnEffectiveDate" msprop:Generator_ColumnPropNameInRow="EffectiveDate" msprop:Generator_ColumnPropNameInTable="EffectiveDateColumn" msprop:Generator_UserColumnName="EffectiveDate" type="xs:dateTime" />
+              <xs:element name="PostingPeriod" msprop:Generator_ColumnVarNameInTable="columnPostingPeriod" msprop:Generator_ColumnPropNameInRow="PostingPeriod" msprop:Generator_ColumnPropNameInTable="PostingPeriodColumn" msprop:Generator_UserColumnName="PostingPeriod" type="xs:int" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
